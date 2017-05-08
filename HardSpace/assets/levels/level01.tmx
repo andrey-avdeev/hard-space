@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="200" tilewidth="32" tileheight="32" nextobjectid="120">
+ <tileset firstgid="1" name="g01" tilewidth="64" tileheight="64" tilecount="4" columns="2">
+  <image source="../images/enemies/g01.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="5" name="b01" tilewidth="34" tileheight="33" tilecount="2" columns="2">
+  <image source="../images/enemies/b01.png" width="68" height="33"/>
+ </tileset>
+ <tileset firstgid="7" name="r01" tilewidth="52" tileheight="48" tilecount="3" columns="3">
+  <image source="../images/enemies/r01.png" width="156" height="48"/>
+ </tileset>
+ <tileset firstgid="10" name="p01" tilewidth="40" tileheight="46" tilecount="1" columns="1">
+  <image source="../images/player/p01.png" width="40" height="46"/>
+ </tileset>
+ <tileset firstgid="11" name="a01" tilewidth="32" tileheight="26" tilecount="1" columns="1">
+  <image source="../images/other/a01.png" width="32" height="26"/>
+ </tileset>
+ <tileset firstgid="12" name="a02" tilewidth="33" tileheight="33" tilecount="1" columns="1">
+  <image source="../images/other/a02.png" width="33" height="33"/>
+ </tileset>
+ <tileset firstgid="13" name="a03" tilewidth="79" tileheight="71" tilecount="1" columns="1">
+  <image source="../images/other/a03.png" width="79" height="71"/>
+ </tileset>
+ <tileset firstgid="14" name="background" tilewidth="40" tileheight="40" tilecount="1" columns="1">
+  <image source="../images/background.png" width="40" height="40"/>
+ </tileset>
+ <tileset firstgid="15" name="message" tilewidth="32" tileheight="32" tilecount="1" columns="1">
+  <image source="../images/message.png" width="55" height="48"/>
+ </tileset>
+ <tileset firstgid="16" name="event" tilewidth="32" tileheight="32" tilecount="2" columns="2">
+  <image source="../images/event.png" width="68" height="48"/>
+  <tile id="0">
+   <properties>
+    <property name="action" value="endLevel"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="background" width="10" height="200">
+  <data encoding="csv">
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14,
+14,14,14,14,14,14,14,14,14,14
+</data>
+ </layer>
+ <objectgroup name="gameObjects">
+  <object id="1" name="player" type="player" gid="10" x="139" y="6390" width="40" height="46"/>
+  <object id="27" name="a01" type="smallAsteroid" gid="11" x="49" y="5681" width="32" height="26" rotation="-5">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="28" name="a02" type="middleAsteroid" gid="12" x="205" y="5775" width="33" height="33" rotation="6">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="29" name="a03" type="largeAsteroid" gid="13" x="123" y="5330" width="79" height="71" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="30" name="a02" type="middleAsteroid" gid="12" x="182.5" y="5566.5" width="33" height="33" rotation="-6">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="31" name="a01" type="smallAsteroid" gid="11" x="39" y="5496" width="32" height="26" rotation="6">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="32" name="a01" type="smallAsteroid" gid="11" x="257" y="5470" width="32" height="26" rotation="-8">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="33" name="a01" type="smallAsteroid" gid="11" x="120" y="5439" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="34" name="a02" type="middleAsteroid" gid="12" x="230.5" y="5393.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="35" name="a02" type="middleAsteroid" gid="12" x="45.5" y="5272.5" width="33" height="33" rotation="-8">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="36" name="a02" type="middleAsteroid" gid="12" x="231.5" y="5209.5" width="33" height="33" rotation="14">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="37" name="m01" type="message" gid="15" x="0" y="6199" width="328" height="32">
+   <properties>
+    <property name="text" value="Destroy or avoid the asteroids."/>
+   </properties>
+  </object>
+  <object id="39" name="m01" type="message" gid="15" x="0" y="5024" width="328" height="32">
+   <properties>
+    <property name="text" value="Good job. Let's use rocket launcher."/>
+   </properties>
+  </object>
+  <object id="40" name="a02" type="middleAsteroid" gid="12" x="125.5" y="4553.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="41" name="a01" type="smallAsteroid" gid="11" x="34" y="4696" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="42" name="a03" type="largeAsteroid" gid="13" x="37.5" y="4619.5" width="79" height="71" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="43" name="a03" type="largeAsteroid" gid="13" x="155.5" y="4464.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="44" name="a03" type="largeAsteroid" gid="13" x="233" y="4566" width="79" height="71" rotation="-5">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="45" name="a02" type="middleAsteroid" gid="12" x="86.5" y="4402.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="46" name="a01" type="smallAsteroid" gid="11" x="6" y="4560" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="47" name="a01" type="smallAsteroid" gid="11" x="286" y="4438" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="48" name="a03" type="largeAsteroid" gid="13" x="-0.5" y="4460.5" width="79" height="71" rotation="10">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="49" name="m01" type="message" gid="15" x="1" y="4188" width="328" height="32">
+   <properties>
+    <property name="text" value="Excellent. Just fly through the asteroids. Your energy shield will protect you."/>
+   </properties>
+  </object>
+  <object id="50" name="a01" type="smallAsteroid" gid="11" x="249" y="4041" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="51" name="a01" type="smallAsteroid" gid="11" x="131" y="4011" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="52" name="a01" type="smallAsteroid" gid="11" x="74" y="4032" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="53" name="a01" type="smallAsteroid" gid="11" x="130" y="3894" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="54" name="a01" type="smallAsteroid" gid="11" x="211" y="3927" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="55" name="a01" type="smallAsteroid" gid="11" x="72" y="3911" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="56" name="a01" type="smallAsteroid" gid="11" x="227" y="3804" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="57" name="a01" type="smallAsteroid" gid="11" x="270" y="3896" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="58" name="a01" type="smallAsteroid" gid="11" x="192" y="3852" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="59" name="a01" type="smallAsteroid" gid="11" x="64" y="3785" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="60" name="a01" type="smallAsteroid" gid="11" x="6" y="3851" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="61" name="a01" type="smallAsteroid" gid="11" x="11" y="3964" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="62" name="a01" type="smallAsteroid" gid="11" x="97" y="3941" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="63" name="a01" type="smallAsteroid" gid="11" x="199" y="3964" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="64" name="a01" type="smallAsteroid" gid="11" x="112" y="3793" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="65" name="a01" type="smallAsteroid" gid="11" x="70" y="3836" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="66" name="a01" type="smallAsteroid" gid="11" x="177" y="3733" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="67" name="a01" type="smallAsteroid" gid="11" x="144" y="3793" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="68" name="a01" type="smallAsteroid" gid="11" x="195" y="4003" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="69" name="a01" type="smallAsteroid" gid="11" x="29" y="4039" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="70" name="a01" type="smallAsteroid" gid="11" x="284" y="4083" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="73" name="m01" type="message" gid="15" x="-1" y="3615" width="328" height="32">
+   <properties>
+    <property name="text" value="Excellent. Now, use power boost to destroy the whole line."/>
+   </properties>
+  </object>
+  <object id="74" name="a01" type="smallAsteroid" gid="11" x="150.5" y="3298" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="75" name="a01" type="smallAsteroid" gid="11" x="155" y="3214" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="76" name="a01" type="smallAsteroid" gid="11" x="153.5" y="3135.5" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="77" name="a01" type="smallAsteroid" gid="11" x="152.5" y="3060" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="78" name="a01" type="smallAsteroid" gid="11" x="152.5" y="2986.5" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="79" name="m01" type="message" gid="15" x="-0.363636" y="2820.36" width="328" height="32">
+   <properties>
+    <property name="text" value="Well, you are almost ready. Collect green bonuses and avoid red."/>
+   </properties>
+  </object>
+  <object id="80" name="m01" type="message" gid="15" x="-1" y="2283" width="328" height="32">
+   <properties>
+    <property name="text" value="Excellent. There are large group of asteroids. Destroy them and your exam will be passed."/>
+   </properties>
+  </object>
+  <object id="81" name="a03" type="largeAsteroid" gid="13" x="134.5" y="1892.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="82" name="a03" type="largeAsteroid" gid="13" x="44.5" y="1490.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="83" name="a03" type="largeAsteroid" gid="13" x="208.5" y="1338.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="84" name="a03" type="largeAsteroid" gid="13" x="83.5" y="845.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="85" name="a03" type="largeAsteroid" gid="13" x="201.5" y="825.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="86" name="a03" type="largeAsteroid" gid="13" x="13.5" y="1079.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="87" name="a03" type="largeAsteroid" gid="13" x="25.5" y="608.5" width="79" height="71" rotation="-1">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="88" name="m01" type="message" gid="15" x="0" y="483" width="328" height="32">
+   <properties>
+    <property name="text" value="Congratulations."/>
+   </properties>
+  </object>
+  <object id="89" name="a01" type="smallAsteroid" gid="11" x="56" y="2011" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="90" name="a01" type="smallAsteroid" gid="11" x="203" y="1659" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="91" name="a01" type="smallAsteroid" gid="11" x="50" y="1563" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="92" name="a01" type="smallAsteroid" gid="11" x="210" y="1445" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="93" name="a01" type="smallAsteroid" gid="11" x="69" y="1186" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="94" name="a01" type="smallAsteroid" gid="11" x="222" y="1038" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="95" name="a01" type="smallAsteroid" gid="11" x="116" y="938" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="96" name="a01" type="smallAsteroid" gid="11" x="232" y="883" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="97" name="a01" type="smallAsteroid" gid="11" x="214" y="664" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="98" name="a01" type="smallAsteroid" gid="11" x="266" y="551" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="99" name="a01" type="smallAsteroid" gid="11" x="80" y="640" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="100" name="a01" type="smallAsteroid" gid="11" x="133" y="518" width="32" height="26" rotation="-9">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="101" name="a02" type="middleAsteroid" gid="12" x="251.5" y="1722.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="102" name="a02" type="middleAsteroid" gid="12" x="78.5" y="1669.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="103" name="a02" type="middleAsteroid" gid="12" x="160.5" y="1578.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="104" name="a02" type="middleAsteroid" gid="12" x="239.5" y="1516.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="105" name="a02" type="middleAsteroid" gid="12" x="217.5" y="1223.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="106" name="a02" type="middleAsteroid" gid="12" x="223.5" y="1135.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="107" name="a02" type="middleAsteroid" gid="12" x="138.5" y="1136.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="108" name="a02" type="middleAsteroid" gid="12" x="153.5" y="1018.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="109" name="a02" type="middleAsteroid" gid="12" x="24.5" y="823.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="110" name="a02" type="middleAsteroid" gid="12" x="143.5" y="658.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="111" name="a02" type="middleAsteroid" gid="12" x="105.5" y="1777.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="112" name="a02" type="middleAsteroid" gid="12" x="166.5" y="1796.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="113" name="a02" type="middleAsteroid" gid="12" x="197.5" y="1933.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="114" name="a02" type="middleAsteroid" gid="12" x="40.5" y="1841.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="115" name="a02" type="middleAsteroid" gid="12" x="30.5" y="714.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="116" name="a02" type="middleAsteroid" gid="12" x="176.5" y="686.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="117" name="a02" type="middleAsteroid" gid="12" x="181.5" y="522.5" width="33" height="33" rotation="5">
+   <properties>
+    <property name="hp" type="int" value="50"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="119" name="e01" type="event" gid="16" x="2" y="401" width="325" height="32"/>
+ </objectgroup>
+</map>
