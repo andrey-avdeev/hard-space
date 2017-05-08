@@ -2,12 +2,17 @@
 	defaultJsExtensions: true,
 	transpiler: "typescript",
 	typescriptOptions: {
-		"tsconfig": "tsconfig.json"
+		"tsconfig": "src/tsconfig.json"
 	},
-	//paths: {
-	//	"github:*": "jspm_packages/github/*"
-	//},
-	//map: {
-	//	"phaser": "github:photonstorm/phaser@2.5.0/build/phaser"
-	//}
+	paths: {
+		'phaser:*': 'node_modules/phaser/build/*'
+	},
+	map: {
+		"phaser": "phaser:phaser.js"
+	},
+	meta: {
+		'phaser': {
+			format: 'global'
+		}
+	}
 });

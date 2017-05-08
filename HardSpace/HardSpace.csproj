@@ -22,7 +22,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="assets\images\background.png" />
     <Content Include="assets\images\enemies\b01.png" />
     <Content Include="assets\images\enemies\g01.png" />
@@ -36,22 +35,25 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="systemjs.config.js" />
+    <Content Include="tasks\clean.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\game.ts" />
     <TypeScriptCompile Include="src\utils\enemyFactory.ts" />
     <TypeScriptCompile Include="src\utils\eventFactory.ts" />
     <TypeScriptCompile Include="src\utils\levelProvider.ts" />
     <TypeScriptCompile Include="src\utils\messageFactory.ts" />
-    <TypeScriptCompile Include="typings\game.d.ts" />
-    <TypeScriptCompile Include="typings\tilemap.d.ts" />
+    <TypeScriptCompile Include="src\typings\app\phaser.d.ts" />
+    <TypeScriptCompile Include="src\typings\app\tilemap.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\levels\level01.json" />
     <Content Include="assets\levels\level01.tmx" />
     <Content Include="package.json" />
-    <Content Include="tsconfig.json" />
+    <Content Include="src\tsconfig.json" />
+    <Content Include="typings.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -63,7 +65,6 @@
     <Folder Include="assets\sounds\" />
     <Folder Include="src\prefabs\" />
     <Folder Include="src\states\" />
-    <Folder Include="tasks\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

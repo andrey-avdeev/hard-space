@@ -1,4 +1,4 @@
-﻿declare module 'Tilemap' {
+﻿declare module 'TileMap' {
 	export interface ILevel {
 		width: number;
 		height: number;

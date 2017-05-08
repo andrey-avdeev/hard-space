@@ -1,13 +1,13 @@
-﻿//import {IEvent} from "tilemap";
+﻿import { IEvent } from "TileMap";
 
-//export class EventFactory {
-//	constructor(private game: any) {
+export class EventFactory {
+	constructor(private game: Phaser.Game) {
 
-//	}
+	}
 
-//	raise = (event: IEvent) => {
-//		let action = event.properties.action as string;
-//		let delay = event.properties.delay as number;
+	raise = (event: IEvent) => {
+		let action = event.properties.action as string;
+		let delay = event.properties.delay as number;
 
-//	}
-//}
+	}
+}

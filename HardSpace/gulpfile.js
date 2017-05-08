@@ -6,23 +6,26 @@ var merge = require('merge2');
 
 require('events').EventEmitter.prototype._maxListeners = 10;
 
-var tsProject = ts.createProject('tsconfig.json');
+var tsProject = ts.createProject('src/tsconfig.json');
 
+const srcDir = './src';
+
+gulp.task('clean', require('./tasks/clean')(gulp, srcDir));
 
 gulp.task('build', () => {
 	var tsResult = gulp.src('src/**/*.ts')
 		.pipe(tsProject());
 
 	return merge([
-		tsResult.dts.pipe(gulp.dest('build/definitions')),
-		tsResult.js.pipe(gulp.dest('build/js'))
+		//tsResult.dts.pipe(gulp.dest('build/definitions')),
+		tsResult.js.pipe(gulp.dest('src'))
 	]);
 });
 
 gulp.task('bundle', ['build'], () => {
 	return gulp.src([
-			'build/**/*.js'
+			'src/**/*.js'
 	])
 		.pipe(concat('bundle.js'))
-		.pipe(gulp.dest('bundle/js'));
+		.pipe(gulp.dest('bundle'));
 });

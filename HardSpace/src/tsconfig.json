@@ -14,11 +14,10 @@
 		"suppressImplicitAnyIndexErrors": true
 	},
 	"include": [
-		"src/**/*.ts",
-		"typings"
+		"**/*.ts"
 	],
 	"exclude": [
 		"node_modules",
-		"src/**/*.spec.ts"
+		"**/*.spec.ts"
 	]
 }
