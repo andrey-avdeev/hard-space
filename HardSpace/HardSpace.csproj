@@ -34,8 +34,13 @@
     <Content Include="assets\images\player\p01.png" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
-    <Content Include="systemjs.config.js" />
+    <Content Include="index.js" />
+    <Content Include="systemjs.dist.conf.js" />
+    <Content Include="systemjs.debug.conf.js" />
+    <Content Include="tasks\build-debug.js" />
+    <Content Include="tasks\build-dist.js" />
     <Content Include="tasks\clean.js" />
+    <Content Include="tasks\compile.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -53,7 +58,6 @@
     <Content Include="assets\levels\level01.tmx" />
     <Content Include="package.json" />
     <Content Include="src\tsconfig.json" />
-    <Content Include="typings.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

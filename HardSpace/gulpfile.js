@@ -1,31 +1,22 @@
-﻿var gulp = require('gulp');
-var concat = require('gulp-concat');
-var path = require('path');
-var ts = require('gulp-typescript');
-var merge = require('merge2');
+﻿const gulp = require('gulp');
+const concat = require('gulp-concat');
+const path = require('path');
 
 require('events').EventEmitter.prototype._maxListeners = 10;
 
-var tsProject = ts.createProject('src/tsconfig.json');
+const config = {
+	projectDir: __dirname,
+	bundleDir: '',
+	srcDir: path.join(__dirname, 'src'),
+	distDir: path.join(__dirname, 'src'),
+	systemjsDebugConf: 'systemjs.debug.conf.js',
+	systemjsDistConf: 'systemjs.dist.conf.js'
+}
 
-const srcDir = './src';
+gulp.task('clean', require('./tasks/clean')(gulp, config.srcDir));
 
-gulp.task('clean', require('./tasks/clean')(gulp, srcDir));
+gulp.task('compile', ['clean'], require('./tasks/compile')(gulp, config.srcDir, config.distDir));
 
-gulp.task('build', () => {
-	var tsResult = gulp.src('src/**/*.ts')
-		.pipe(tsProject());
+gulp.task('build-debug', ['compile'], require('./tasks/build-debug')(gulp, config));
 
-	return merge([
-		//tsResult.dts.pipe(gulp.dest('build/definitions')),
-		tsResult.js.pipe(gulp.dest('src'))
-	]);
-});
-
-gulp.task('bundle', ['build'], () => {
-	return gulp.src([
-			'src/**/*.js'
-	])
-		.pipe(concat('bundle.js'))
-		.pipe(gulp.dest('bundle'));
-});
+gulp.task('build-dist', ['compile'], require('./tasks/build-dist')(gulp, config));

@@ -1,5 +1,5 @@
 ﻿System.config({
-	defaultJsExtensions: true,
+	defaultJsExtensions: false,
 	transpiler: "typescript",
 	typescriptOptions: {
 		"tsconfig": "src/tsconfig.json"
@@ -13,6 +13,17 @@
 	meta: {
 		'phaser': {
 			format: 'global'
+			//loader: 'js'
 		}
-	}
+	},
+	//packages: {
+	//	"src": {
+	//		"defaultExtension": "js"
+	//		//"meta": {
+	//		//	"*.js": {
+	//		//		//"loader": "js"
+	//		//	}
+	//		//}
+	//	}
+	//}
 });
