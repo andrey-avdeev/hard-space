@@ -1,0 +1,31 @@
+{
+  "name": "hardspace",
+  "version": "1.0.0",
+  "description": "Space indie game",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-typescript": "^3.1.6",
+    "merge2": "^1.0.3",
+    "run-sequence": "^1.2.2",
+    "systemjs": "^0.20.12",
+    "systemjs-builder": "^0.16.4",
+    "typescript": "^2.2.2"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avdeev-andrew/hard-space.git"
+  },
+  "keywords": [
+    "hardspace"
+  ],
+  "author": "Andrew Avdeev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avdeev-andrew/hard-space/issues"
+  },
+  "homepage": "https://github.com/avdeev-andrew/hard-space#readme"
+}

@@ -33,16 +33,25 @@
     <Content Include="assets\images\other\a02.png" />
     <Content Include="assets\images\other\a03.png" />
     <Content Include="assets\images\player\p01.png" />
+    <Content Include="gulpfile.js" />
     <Content Include="index.html" />
+    <Content Include="systemjs.config.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="src\app.ts" />
+    <TypeScriptCompile Include="src\utils\enemyFactory.ts" />
+    <TypeScriptCompile Include="src\utils\eventFactory.ts" />
+    <TypeScriptCompile Include="src\utils\levelProvider.ts" />
+    <TypeScriptCompile Include="src\utils\messageFactory.ts" />
+    <TypeScriptCompile Include="typings\game.d.ts" />
     <TypeScriptCompile Include="typings\tilemap.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\levels\level01.json" />
     <Content Include="assets\levels\level01.tmx" />
+    <Content Include="package.json" />
+    <Content Include="tsconfig.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
@@ -52,7 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\sounds\" />
-    <Folder Include="scripts\" />
+    <Folder Include="src\prefabs\" />
+    <Folder Include="src\states\" />
+    <Folder Include="tasks\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
