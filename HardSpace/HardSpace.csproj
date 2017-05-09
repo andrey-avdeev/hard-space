@@ -40,7 +40,12 @@
     <Content Include="tasks\build-debug.js" />
     <Content Include="tasks\build-dist.js" />
     <Content Include="tasks\clean.js" />
+    <Content Include="tasks\pack-assets.js" />
+    <Content Include="tasks\pack-tilemap.js" />
     <Content Include="tasks\compile.js" />
+    <Content Include="tasks\browser-sync.js" />
+    <Content Include="tasks\watch-assets.js" />
+    <Content Include="tasks\watch-tilemap.js" />
     <Content Include="tasks\watch.js" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -48,6 +53,7 @@
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\game.ts" />
     <TypeScriptCompile Include="src\states\boot.ts" />
+    <TypeScriptCompile Include="src\utils\assetsProvider.ts" />
     <TypeScriptCompile Include="src\utils\enemyFactory.ts" />
     <TypeScriptCompile Include="src\utils\eventFactory.ts" />
     <TypeScriptCompile Include="src\utils\levelProvider.ts" />
@@ -60,6 +66,8 @@
     <Content Include="assets\levels\level01.tmx" />
     <Content Include="package.json" />
     <Content Include="src\tsconfig.json" />
+    <Content Include="assets\tilemap-assets.json" />
+    <Content Include="assets\tree.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

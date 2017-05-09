@@ -2,8 +2,8 @@
 	const path = require('path');
 	const watch = require('gulp-watch');
 
-	return watch(path.join(sourceDir, '**', '*.ts'),
+	return watch(path.join(sourceDir, 'levels', '*.json'),
 			{
 				ignoreInitial: false
-			}, () =>gulp.start('compile'));
+			}, () =>gulp.start('pack-tilemap'));
 }

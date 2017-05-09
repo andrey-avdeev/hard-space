@@ -1,0 +1,96 @@
+{
+    "meta": {
+        "generated": "1494340931677",
+        "version": "1.0",
+        "app": "gulp-phaser-tiled-pack",
+        "url": "https://github.com/englercj/gulp-phaser-tiled-pack"
+    },
+    "level01": [
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_g01",
+            "name": "g01",
+            "url": "images/enemies/g01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_b01",
+            "name": "b01",
+            "url": "images/enemies/b01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_r01",
+            "name": "r01",
+            "url": "images/enemies/r01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_p01",
+            "name": "p01",
+            "url": "images/player/p01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_a01",
+            "name": "a01",
+            "url": "images/other/a01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_a02",
+            "name": "a02",
+            "url": "images/other/a02.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_a03",
+            "name": "a03",
+            "url": "images/other/a03.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_background",
+            "name": "background",
+            "url": "images/background.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_message",
+            "name": "message",
+            "url": "images/message.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset",
+            "key": "level01_tileset_event",
+            "name": "event",
+            "url": "images/event.png",
+            "overwrite": false
+        },
+        {
+            "type": "tiledmap",
+            "key": "level01_tiledmap",
+            "url": "assets/level01.json",
+            "format": "TILED_JSON"
+        }
+    ]
+}
