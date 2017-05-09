@@ -1,4 +1,4 @@
-﻿import { IMessage } from "TileMap";
+import { IMessage } from "TileMap";
 
 export class MessageFactory {
 	constructor(private game: Phaser.Game, private messagePool: any) {

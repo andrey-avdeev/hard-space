@@ -16,12 +16,11 @@
 <body>
 	<!--build:js-->
 	<script src="node_modules/es6-promise/dist/es6-promise.auto.js"></script>
-	<script src="node_modules/systemjs/dist/system-csp-production.js"></script>
-	<script src="systemjs.dist.conf.js"></script>
-	<script src="hardspace.min.js"></script>
+	<script src="node_modules/systemjs/dist/system.js"></script>
+	<script src="systemjs.debug.conf.js"></script>
 	<!--endbuild-->
 	<script>
-		System.import('src/app.js');
+		System.import('build/app.js');
 	</script>
 </body>
 </html>

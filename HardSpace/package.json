@@ -15,6 +15,7 @@
     "gulp-html-replace": "^1.6.2",
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-typescript": "^3.1.6",
+    "gulp-watch": "^4.3.11",
     "run-sequence": "^1.2.2",
     "systemjs": "^0.19.47",
     "systemjs-builder": "^0.15.36",

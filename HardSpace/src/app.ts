@@ -1,4 +1,4 @@
-﻿import 'phaser';
+import 'phaser';
 
 import * as TileMap from 'TileMap';
 

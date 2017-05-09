@@ -1,4 +1,4 @@
-﻿import { IGameObject } from "TileMap";
+import { IGameObject } from "TileMap";
 
 export class EnemyFactory {
 	constructor(private game: Phaser.Game) {

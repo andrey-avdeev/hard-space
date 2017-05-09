@@ -1,4 +1,4 @@
-﻿import { ILevel } from "TileMap";
+import { ILevel } from "TileMap";
 
 export class LevelProvider {
 

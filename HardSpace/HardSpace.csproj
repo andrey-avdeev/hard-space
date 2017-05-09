@@ -41,6 +41,7 @@
     <Content Include="tasks\build-dist.js" />
     <Content Include="tasks\clean.js" />
     <Content Include="tasks\compile.js" />
+    <Content Include="tasks\watch.js" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>

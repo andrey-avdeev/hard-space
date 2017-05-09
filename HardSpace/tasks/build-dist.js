@@ -9,10 +9,10 @@
 	let appName = packageJson.name;
 	let bundleName = `${appName}.min.js`;
 	let outFile = path.join(config.bundleDir, bundleName);
-	let moduleName = 'src/app.js';
+	let moduleName = 'build/app.js';
 	let buildConfig = {
 		moduleName: false,
-		minify: true,
+		minify: false,
 		sourceMaps: true
 	}
 

@@ -1,4 +1,4 @@
-﻿import { Boot } from './states/boot.js';
+import { Boot } from './states/boot.js';
 
 export class Game extends Phaser.Game {
 	constructor() {

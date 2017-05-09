@@ -1,4 +1,4 @@
-﻿import { IEvent } from "TileMap";
+import { IEvent } from "TileMap";
 
 export class EventFactory {
 	constructor(private game: Phaser.Game) {
