@@ -1,40 +1,17 @@
 ﻿System.config({
-	//transpiler: "typescript",
-	//typescriptOptions: {
-	//	"tsconfig": "src/tsconfig.json"
-	//},
-	encapsulateGlobal: true,
+	transpiler: "typescript",
+	typescriptOptions: {
+		"tsconfig": "src/tsconfig.json"
+	},
 	paths: {
-		//'phaser:': 'node_modules/phaser/build/'
-		'phaser:': 'node_modules/phaser/build/custom/'
+		'phaser:': 'node_modules/phaser/build/'
 	},
 	map: {
-		//"phaser": "phaser:phaser.js",
-		"PIXI": "phaser:pixi.js",
-		"p2": "phaser:p2.js",
-		"phaser": "phaser:phaser-split.js"
+		"phaser": "phaser:phaser.js"
 	},
-	//bundles: {
-	//	'hardspace.min.js': ['phaser']
-	//}
-	//meta: {
-	//	//'phaser': {
-	//	//	format: 'global'
-	//	//	//loader: 'js'
-	//	//}
-	//	'pixi': {
-	//		format: 'global'
-	//		//loader: 'js'
-	//	}
-	//},
-	//packages: {
-	//	"src": {
-	//		"defaultExtension": "js"
-	//		//"meta": {
-	//		//	"*.js": {
-	//		//		//"loader": "js"
-	//		//	}
-	//		//}
-	//	}
-	//}
+	meta: {
+		'phaser': {
+			format: 'global'
+		}
+	}
 });

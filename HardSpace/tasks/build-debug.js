@@ -1,5 +1,6 @@
 ﻿module.exports = (gulp, config) =>() => {
 	const htmlreplace = require('gulp-html-replace');
+	const lec = require('gulp-line-ending-corrector');
 
 	return gulp.src('index.html')
 		.pipe(htmlreplace({
@@ -12,5 +13,6 @@
 			{
 				keepBlockTags: true
 			}))
+		.pipe(lec({ verbose: false, eolc: 'LF', encoding: 'utf8' }))
 		.pipe(gulp.dest(config.bundleDir));
 }

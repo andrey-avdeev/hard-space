@@ -5,6 +5,9 @@
 bundle/
 HardSpace/src/**/*.js
 HardSpace/src/**/*.map
+HardSpace/*.min.js
+HardSpace/*.min.map
+
 
 # User-specific files
 *.suo
