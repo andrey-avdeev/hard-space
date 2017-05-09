@@ -13,7 +13,7 @@ const config = {
 	systemjsDistConf: 'systemjs.dist.conf.js'
 }
 
-gulp.task('clean', require('./tasks/clean')(gulp, config.srcDir));
+gulp.task('clean', require('./tasks/clean')(gulp, config));
 
 gulp.task('compile', ['clean'], require('./tasks/compile')(gulp, config.srcDir, config.distDir));
 

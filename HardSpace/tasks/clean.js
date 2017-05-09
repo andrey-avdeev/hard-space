@@ -1,10 +1,15 @@
-﻿module.exports = (gulp, dir) =>() => {
+﻿module.exports = (gulp, config) =>() => {
 	const del = require('del');
 	const path = require('path');
+	const packageJson = require(path.join(config.projectDir, 'package.json'));
+
+	let appName = packageJson.name;
 
 	return del([
-		path.join(dir, '**', '*.js'),
-		'!' + path.join(dir, '*config.js'),
-		path.join(dir, '**', '*.js.map')
+		path.join(config.projectDir, `${appName}.min.js`),
+		path.join(config.projectDir, `${appName}.min.js.map`),
+		path.join(config.srcDir, '**', '*.js'),
+		'!' + path.join(config.srcDir, '*config.js'),
+		path.join(config.srcDir, '**', '*.js.map')
 	]);
 }
