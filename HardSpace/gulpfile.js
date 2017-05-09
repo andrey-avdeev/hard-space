@@ -22,6 +22,8 @@ gulp.task('compile', ['clean'], require('./tasks/compile')(gulp, config.srcDir, 
 
 gulp.task('watch', require('./tasks/watch')(gulp, config.srcDir, config.distDir));
 
+//gulp.task('browser-sync', require('./tasks/watch') (gulp, config.srcDir, config.distDir));
+
 gulp.task('build-debug', ['compile'], require('./tasks/build-debug')(gulp, config));
 
 gulp.task('build-dist', ['compile'], require('./tasks/build-dist')(gulp, config));
