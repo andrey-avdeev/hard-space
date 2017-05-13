@@ -1,6 +1,7 @@
-import 'phaser';
+import "phaser";
 
-import * as TileMap from 'TileMap';
+import * as TileMap from "TileMap";
+import * as Tree from "Tree";
 
 import { Game } from "./game.js";
 

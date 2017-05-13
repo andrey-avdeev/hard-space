@@ -1,14 +1,13 @@
-﻿
+﻿import { INode } from "Tree";
+
 export class AssetsProvider {
 	constructor(private game: Phaser.Game) {
 
 	}
 
-	loadLevels = () => {
-		let levelsMeta = JSON.parse(this.game.cache.getText("tilemap-assets"));
-	}
+	getTree = () => {
+		let tree = JSON.parse(this.game.cache.getText("assetsTree")) as INode;
 
-	loadAssets = () => {
-		let assetsStructure = JSON.parse(this.game.cache.getText("tree"));
+		return tree;
 	}
 }

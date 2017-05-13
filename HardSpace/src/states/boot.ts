@@ -1,7 +1,11 @@
-export class Boot extends Phaser.State {
+
+export class BootState extends Phaser.State {
 
 	preload() {
+		//preload assets registration
 		this.load.image('bar', 'assets/images/background.png');
+		//todo
+
 	}
 
 	create() {

@@ -7,7 +7,8 @@ export class LevelProvider {
 	}
 
 	level = (id: number) => {
-		let level = JSON.parse(this.game.cache.getText(this.prefix + id)) as ILevel;
+		let textId = id > 9 ? id : '0' + id;
+		let level = JSON.parse(this.game.cache.getText(this.prefix + textId)) as ILevel;
 
 		return level;
 	}
