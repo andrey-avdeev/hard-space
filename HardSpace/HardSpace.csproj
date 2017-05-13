@@ -52,18 +52,33 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\game.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\base-blue-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\base-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\base-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\huge-blue-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\huge-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\large-blue-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\large-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\medium-blue-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\medium-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\small-blue-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\enemies\small-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\base-asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\large-asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\medium-asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\small-asteroid.ts" />
     <TypeScriptCompile Include="src\states\boot.ts" />
     <TypeScriptCompile Include="src\states\level.ts" />
     <TypeScriptCompile Include="src\states\menu.ts" />
     <TypeScriptCompile Include="src\states\preload.ts" />
     <TypeScriptCompile Include="src\typings\app\tree.d.ts" />
-    <TypeScriptCompile Include="src\utils\assetsProvider.ts" />
-    <TypeScriptCompile Include="src\utils\enemyFactory.ts" />
-    <TypeScriptCompile Include="src\utils\eventFactory.ts" />
-    <TypeScriptCompile Include="src\utils\levelProvider.ts" />
-    <TypeScriptCompile Include="src\utils\messageFactory.ts" />
+    <TypeScriptCompile Include="src\utils\assets-provider.ts" />
+    <TypeScriptCompile Include="src\utils\enemy-factory.ts" />
+    <TypeScriptCompile Include="src\utils\event-factory.ts" />
+    <TypeScriptCompile Include="src\utils\level-provider.ts" />
+    <TypeScriptCompile Include="src\utils\message-factory.ts" />
     <TypeScriptCompile Include="src\typings\app\phaser.d.ts" />
-    <TypeScriptCompile Include="src\typings\app\tilemap.d.ts" />
+    <TypeScriptCompile Include="src\typings\app\tile-map.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\levels\level01.json" />
@@ -81,7 +96,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\sounds\" />
-    <Folder Include="src\prefabs\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>

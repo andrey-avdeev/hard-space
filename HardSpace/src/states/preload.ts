@@ -1,4 +1,4 @@
-﻿import { AssetsProvider } from "src/utils/assetsProvider.js";
+﻿import { AssetsProvider } from "src/utils/assets-provider.js";
 
 export class PreloadState extends Phaser.State {
 	preload() {

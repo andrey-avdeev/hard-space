@@ -1,4 +1,3 @@
-
 export class BootState extends Phaser.State {
 
 	preload() {
