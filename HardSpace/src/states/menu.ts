@@ -1,5 +1,4 @@
-﻿
-export class MenuState extends Phaser.State {
+﻿export class MenuState extends Phaser.State {
 	init() {
 		
 	}

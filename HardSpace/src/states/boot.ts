@@ -3,14 +3,15 @@ export class BootState extends Phaser.State {
 	preload() {
 		//preload assets registration
 		this.load.image('bar', 'assets/images/background.png');
-		//todo
+		this.load.text("assetsTree", "assets/tree.json");
 
+		//todo
 	}
 
 	create() {
 		this.game.stage.backgroundColor = '#fff';
 		// Disable multitouch
-		this.input.maxPointers = 1;
+		this.input.maxPointers = 2;
 
 		// Pause if browser tab loses focus
 		this.stage.disableVisibilityChange = true;
@@ -21,6 +22,6 @@ export class BootState extends Phaser.State {
 			// Mobile settings
 		}
 
-		//this.game.state.start("Preloader");
+		this.game.state.start("Preload");
 	}
 }

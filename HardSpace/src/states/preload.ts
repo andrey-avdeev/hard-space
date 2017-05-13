@@ -1,9 +1,8 @@
-﻿import { AssetsProvider } from "src/utils/assets-provider.js";
+﻿import { AssetsProvider } from "../utils/assets-provider.js";
 
 export class PreloadState extends Phaser.State {
 	preload() {
 		//levels autoregistration
-		this.load.text("assetsTree", "assets/tree.json");
 		let assetsProvider = new AssetsProvider(this.game);
 		let tree = assetsProvider.getTree();
 		tree.children.forEach((node) => {

@@ -87,6 +87,7 @@
     <Content Include="src\tsconfig.json" />
     <Content Include="assets\tilemap-assets.json" />
     <Content Include="assets\tree.json" />
+    <Content Include="assets\levels\level02.json" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
