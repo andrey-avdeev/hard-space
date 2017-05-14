@@ -32,6 +32,7 @@
     <Content Include="assets\images\other\a02.png" />
     <Content Include="assets\images\other\a03.png" />
     <Content Include="assets\images\player\p01.png" />
+    <Content Include="assets\images\progress-bar.png" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="index.js" />

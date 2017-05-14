@@ -2,7 +2,9 @@ export class BootState extends Phaser.State {
 
 	preload() {
 		//preload assets registration
-		this.load.image('bar', 'assets/images/background.png');
+		this.load.image('progressBar', 'assets/images/progress-bar.png');
+
+		this.load.image('background', 'assets/images/background.png');
 		this.load.text("assetsTree", "assets/tree.json");
 
 		//todo
