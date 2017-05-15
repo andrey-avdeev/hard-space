@@ -53,6 +53,11 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\app.ts" />
     <TypeScriptCompile Include="src\game.ts" />
+    <TypeScriptCompile Include="src\prefabs\ammo\base-ammo.ts" />
+    <TypeScriptCompile Include="src\prefabs\ammo\beam.ts" />
+    <TypeScriptCompile Include="src\prefabs\ammo\bullet.ts" />
+    <TypeScriptCompile Include="src\prefabs\ammo\discharge.ts" />
+    <TypeScriptCompile Include="src\prefabs\ammo\plasma.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-blue-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-green-enemy.ts" />
@@ -68,10 +73,12 @@
     <TypeScriptCompile Include="src\prefabs\other\large-asteroid.ts" />
     <TypeScriptCompile Include="src\prefabs\other\medium-asteroid.ts" />
     <TypeScriptCompile Include="src\prefabs\other\small-asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\player.ts" />
     <TypeScriptCompile Include="src\states\boot.ts" />
     <TypeScriptCompile Include="src\states\level.ts" />
     <TypeScriptCompile Include="src\states\menu.ts" />
     <TypeScriptCompile Include="src\states\preload.ts" />
+    <TypeScriptCompile Include="src\typings\app\game.d.ts" />
     <TypeScriptCompile Include="src\typings\app\tree.d.ts" />
     <TypeScriptCompile Include="src\utils\assets-provider.ts" />
     <TypeScriptCompile Include="src\utils\enemy-factory.ts" />
