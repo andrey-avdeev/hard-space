@@ -24,6 +24,7 @@
   <ItemGroup>
     <Content Include="assets\images\ammo\acid.png" />
     <Content Include="assets\images\ammo\beam.png" />
+    <Content Include="assets\images\ammo\blood.png" />
     <Content Include="assets\images\ammo\bullet.png" />
     <Content Include="assets\images\ammo\discharge.png" />
     <Content Include="assets\images\ammo\plasma.png" />
@@ -45,14 +46,19 @@
     <Content Include="assets\images\green\gh03.png" />
     <Content Include="assets\images\green\gl01.png" />
     <Content Include="assets\images\green\gm01.png" />
+    <Content Include="assets\images\green\gs01.png" />
     <Content Include="assets\images\green\gs02.png" />
     <Content Include="assets\images\obstacles\antenna.png" />
     <Content Include="assets\images\obstacles\asteroid01.png" />
     <Content Include="assets\images\obstacles\asteroid02.png" />
     <Content Include="assets\images\obstacles\asteroid03.png" />
     <Content Include="assets\images\obstacles\asteroid04.png" />
+    <Content Include="assets\images\other\awaiter01.png" />
+    <Content Include="assets\images\other\awaiter02.png" />
+    <Content Include="assets\images\other\controls.png" />
     <Content Include="assets\images\other\event.png" />
     <Content Include="assets\images\other\message.png" />
+    <Content Include="assets\images\other\planet01.png" />
     <Content Include="assets\images\other\preload01.png" />
     <Content Include="assets\images\other\preload02.png" />
     <Content Include="assets\images\other\preload03.png" />
