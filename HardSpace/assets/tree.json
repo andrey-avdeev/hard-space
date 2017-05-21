@@ -1,14 +1,14 @@
 {
-	"cwd": "C:\\work\\hard-space\\HardSpace",
-	"base": "C:\\work\\hard-space\\HardSpace\\assets\\levels\\",
-	"path": "C:\\work\\hard-space\\HardSpace\\assets\\levels",
+	"cwd": "C:\\_work\\hardspace\\HardSpace",
+	"base": "C:\\_work\\hardspace\\HardSpace\\assets\\levels\\",
+	"path": "C:\\_work\\hardspace\\HardSpace\\assets\\levels",
 	"stat": null,
 	"_contents": null,
 	"children": [
 		{
-			"cwd": "C:\\work\\hard-space\\HardSpace",
-			"base": "C:\\work\\hard-space\\HardSpace\\assets\\levels\\",
-			"path": "C:\\work\\hard-space\\HardSpace\\assets\\levels\\level01.json",
+			"cwd": "C:\\_work\\hardspace\\HardSpace",
+			"base": "C:\\_work\\hardspace\\HardSpace\\assets\\levels\\",
+			"path": "C:\\_work\\hardspace\\HardSpace\\assets\\levels\\level01.json",
 			"relative": "level01.json",
 			"name": "level01.json",
 			"isFile": true,
@@ -16,9 +16,9 @@
 			"children": []
 		},
 		{
-			"cwd": "C:\\work\\hard-space\\HardSpace",
-			"base": "C:\\work\\hard-space\\HardSpace\\assets\\levels\\",
-			"path": "C:\\work\\hard-space\\HardSpace\\assets\\levels\\level02.json",
+			"cwd": "C:\\_work\\hardspace\\HardSpace",
+			"base": "C:\\_work\\hardspace\\HardSpace\\assets\\levels\\",
+			"path": "C:\\_work\\hardspace\\HardSpace\\assets\\levels\\level02.json",
 			"relative": "level02.json",
 			"name": "level02.json",
 			"isFile": true,

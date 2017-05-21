@@ -1,14 +1,15 @@
 ﻿import { DamageKind } from "Game";
 
 export abstract class BaseEnemy extends Phaser.Sprite {
-	public health: number;
 	public armor: number;
 
 	constructor(
 		game: Phaser.Game,
+		key: string,
 		x: number,
 		y: number,
-		key: string,
+		vx: number,
+		vy: number,
 		health: number,
 		armor: number
 	) {
@@ -18,6 +19,12 @@ export abstract class BaseEnemy extends Phaser.Sprite {
 
 		this.health = health
 		this.armor = armor;
+
+		this.checkWorldBounds = true;
+		this.outOfBoundsKill = true;
+
+		this.body.velocity.x = vx;
+		this.body.velocity.y = vy;
 	}
 
 	public getArmorDamage(damage: number, type: DamageKind) {

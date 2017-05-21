@@ -6,14 +6,16 @@ export class BaseGreenEnemy extends BaseEnemy {
 
 	constructor(
 		game: Phaser.Game,
+		key: string,
 		x: number,
 		y: number,
-		key: string,
+		vx: number,
+		vy: number,
 		health: number,
 		armor: number,
 		shield: number
 	) {
-		super(game, x, y, key, health, armor);
+		super(game, key, x, y, vx, vy, health, armor);
 
 		this.shield = shield;
 	}
