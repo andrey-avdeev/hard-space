@@ -51,8 +51,8 @@
     <Content Include="assets\images\obstacles\antenna.png" />
     <Content Include="assets\images\obstacles\asteroid01.png" />
     <Content Include="assets\images\obstacles\asteroid02.png" />
-    <Content Include="assets\images\obstacles\asteroid03.png" />
     <Content Include="assets\images\obstacles\asteroid04.png" />
+    <Content Include="assets\images\obstacles\asteroid03.png" />
     <Content Include="assets\images\other\awaiter01.png" />
     <Content Include="assets\images\other\awaiter02.png" />
     <Content Include="assets\images\other\controls.png" />
