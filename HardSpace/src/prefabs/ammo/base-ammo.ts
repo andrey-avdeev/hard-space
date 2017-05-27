@@ -1,6 +1,9 @@
 ﻿import { DamageKind } from "Game";
 
 export class BaseAmmo extends Phaser.Sprite {
+	public power: number;
+	public damageKind: DamageKind;
+
 	constructor(
 		game: Phaser.Game,
 		key: string,
@@ -18,5 +21,9 @@ export class BaseAmmo extends Phaser.Sprite {
 
 		this.body.velocity.x = vx;
 		this.body.velocity.y = vy;
+	}
+
+	public refresh() {
+
 	}
 }

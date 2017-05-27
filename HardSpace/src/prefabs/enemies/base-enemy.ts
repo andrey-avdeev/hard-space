@@ -31,4 +31,8 @@ export abstract class BaseEnemy extends Phaser.Sprite {
 		let realDamage = damage - damage * this.armor / 100;
 		super.damage(realDamage);
 	}
+
+	public refresh() {
+
+	}
 }
