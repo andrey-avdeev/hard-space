@@ -1,177 +1,65 @@
 {
     "meta": {
-        "generated": "1495912830343",
+        "generated": "1498070120441",
         "version": "1.0",
         "app": "gulp-phaser-tiled-pack",
         "url": "https://github.com/englercj/gulp-phaser-tiled-pack"
     },
-    "level01": [
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_g01",
-            "name": "g01",
-            "url": "images/enemies/g01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_b01",
-            "name": "b01",
-            "url": "images/enemies/b01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_r01",
-            "name": "r01",
-            "url": "images/enemies/r01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_p01",
-            "name": "p01",
-            "url": "images/player/p01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_a01",
-            "name": "a01",
-            "url": "images/other/a01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_a02",
-            "name": "a02",
-            "url": "images/other/a02.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_a03",
-            "name": "a03",
-            "url": "images/other/a03.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_background",
-            "name": "background",
-            "url": "images/background.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_message",
-            "name": "message",
-            "url": "images/message.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level01_tileset_event",
-            "name": "event",
-            "url": "images/event.png",
-            "overwrite": false
-        },
-        {
-            "type": "tiledmap",
-            "key": "level01_tiledmap",
-            "url": "assets/level01.json",
-            "format": "TILED_JSON"
-        }
-    ],
     "level02": [
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_g01",
-            "name": "g01",
-            "url": "images/enemies/g01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_b01",
-            "name": "b01",
-            "url": "images/enemies/b01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_r01",
-            "name": "r01",
-            "url": "images/enemies/r01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_p01",
-            "name": "p01",
-            "url": "images/player/p01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_a01",
-            "name": "a01",
-            "url": "images/other/a01.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_a02",
-            "name": "a02",
-            "url": "images/other/a02.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_a03",
-            "name": "a03",
-            "url": "images/other/a03.png",
-            "overwrite": false
-        },
         {
             "type": "image",
             "subtype": "tileset",
             "key": "level02_tileset_background",
             "name": "background",
-            "url": "images/background.png",
+            "url": "images/backgrounds/background_space.png",
             "overwrite": false
         },
         {
             "type": "image",
             "subtype": "tileset",
-            "key": "level02_tileset_message",
-            "name": "message",
-            "url": "images/message.png",
+            "key": "level02_tileset_player",
+            "name": "player",
+            "url": "images/player/p01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_0_asteroids",
+            "name": "asteroids_image_0",
+            "url": "images/obstacles/asteroid01.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_1_asteroids",
+            "name": "asteroids_image_1",
+            "url": "images/obstacles/asteroid02.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_2_asteroids",
+            "name": "asteroids_image_2",
+            "url": "images/obstacles/asteroid03.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_3_asteroids",
+            "name": "asteroids_image_3",
+            "url": "images/obstacles/asteroid04.png",
             "overwrite": false
         },
         {
             "type": "image",
             "subtype": "tileset",
-            "key": "level02_tileset_event",
-            "name": "event",
-            "url": "images/event.png",
+            "key": "level02_tileset_ui",
+            "name": "ui",
+            "url": "images/other/controls.png",
             "overwrite": false
         },
         {

@@ -125,13 +125,12 @@
     <TypeScriptCompile Include="src\typings\app\tile-map.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\levels\level01.json" />
-    <Content Include="assets\levels\level01.tmx" />
     <Content Include="package.json" />
     <Content Include="src\tsconfig.json" />
     <Content Include="assets\tilemap-assets.json" />
     <Content Include="assets\tree.json" />
     <Content Include="assets\levels\level02.json" />
+    <Content Include="assets\levels\level02.tmx" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>

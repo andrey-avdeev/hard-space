@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="5" height="40" tilewidth="64" tileheight="64" nextobjectid="55">
+ <tileset firstgid="1" name="background" tilewidth="40" tileheight="40" tilecount="1" columns="1">
+  <image source="../images/backgrounds/background_space.png" width="40" height="40"/>
+  <terraintypes>
+   <terrain name="New Terrain" tile="0"/>
+  </terraintypes>
+ </tileset>
+ <tileset firstgid="2" name="player" tilewidth="40" tileheight="46" tilecount="1" columns="1">
+  <image source="../images/player/p01.png" width="40" height="46"/>
+ </tileset>
+ <tileset firstgid="3" name="asteroids" tilewidth="79" tileheight="71" tilecount="4" columns="0">
+  <tile id="0">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+   <image width="32" height="26" source="../images/obstacles/asteroid01.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+   <image width="33" height="33" source="../images/obstacles/asteroid02.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="3"/>
+   </properties>
+   <image width="36" height="36" source="../images/obstacles/asteroid03.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="1"/>
+   </properties>
+   <image width="79" height="71" source="../images/obstacles/asteroid04.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="7" name="ui" tilewidth="56" tileheight="56" tilecount="153" columns="17">
+  <image source="../images/other/controls.png" width="960" height="540"/>
+ </tileset>
+ <objectgroup name="GameObjects" offsetx="0" offsety="3.0303">
+  <object id="3" gid="2" x="142.667" y="2519.97" width="40" height="46"/>
+  <object id="5" type="player" gid="2" x="144" y="2522.64" width="40" height="46">
+   <properties>
+    <property name="armor" type="int" value="5"/>
+    <property name="hp" type="int" value="100"/>
+    <property name="shield" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="-5"/>
+   </properties>
+  </object>
+  <object id="9" type="asteroid03" gid="5" x="36" y="1997.64" width="36" height="36">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="1"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="13" type="asteroid03" gid="5" x="98.1203" y="1952.36" width="36" height="36" rotation="-4.49848">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="1"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="14" type="asteroid01" gid="3" x="250.667" y="1866.64" width="32" height="26">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="16" type="asteroid01" gid="3" x="120.767" y="1812.89" width="32" height="26" rotation="9.3486">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="17" type="asteroid01" gid="3" x="192.917" y="1423.57" width="33.4548" height="26.3253" rotation="-9.17822">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="18" type="asteroid02" gid="4" x="158" y="2028.97" width="33" height="33">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="21" type="asteroid04" gid="6" x="110.102" y="1020.74" width="79" height="71" rotation="3.16119">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="23" type="asteroid02" gid="4" x="109.929" y="1182.81" width="33" height="33" rotation="-4.76783">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="24" type="asteroid02" gid="4" x="233.612" y="1250.37" width="33" height="33" rotation="7.00241">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="25" type="asteroid02" gid="4" x="41.0723" y="1351.72" width="33" height="33" rotation="-8.3539">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="26" type="asteroid02" gid="4" x="262.824" y="938.296" width="33" height="33" rotation="10.2627">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="28" type="asteroid03" gid="5" x="193.777" y="909.854" width="36" height="36" rotation="2.45995">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="29" type="asteroid03" gid="5" x="273.236" y="825.925" width="36" height="36" rotation="16.1531">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="30" type="asteroid03" gid="5" x="54.1683" y="922.167" width="36" height="36" rotation="4.52657">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="31" type="asteroid02" gid="4" x="270.167" y="1690.17" width="33" height="33">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="32" type="asteroid02" gid="4" x="11.046" y="1570.16" width="33" height="33" rotation="6.60068">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="33" type="asteroid02" gid="4" x="158.833" y="1483.5" width="33" height="33">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="34" type="asteroid02" gid="4" x="80.8333" y="1690.83" width="33" height="33">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="35" type="asteroid01" gid="3" x="198" y="1647" width="32" height="26">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="36" type="asteroid01" gid="3" x="256" y="1485" width="32" height="26">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="37" type="asteroid01" gid="3" x="144" y="1286" width="32" height="26">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="38" type="asteroid01" gid="3" x="43" y="1423" width="32" height="26">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="5"/>
+   </properties>
+  </object>
+  <object id="40" type="asteroid01" gid="3" x="202.847" y="1121.79" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="41" type="asteroid01" gid="3" x="23.2726" y="1105.84" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="42" type="asteroid01" gid="3" x="75.2726" y="1233.84" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="43" type="asteroid01" gid="3" x="19.2726" y="1786.84" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="44" type="asteroid01" gid="3" x="250.273" y="1750.84" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="45" type="asteroid01" gid="3" x="121.273" y="841.837" width="33.4548" height="26.3253" rotation="5.14017">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+    <property name="vx" type="int" value="0"/>
+    <property name="vy" type="int" value="6"/>
+   </properties>
+  </object>
+  <object id="46" name="Good morning, major. Continue patrol asteroids belt." type="message" x="1.33333" y="2426.3" width="322.667" height="22"/>
+  <object id="49" name="There is strange signal inside those asteroids. Check it out." type="message" x="0.6665" y="2136.33" width="322.667" height="22"/>
+  <object id="50" name="Signal was lost, but the same strange signature was detected in next sector." type="message" x="3.99983" y="1041.67" width="322.667" height="22"/>
+  <object id="54" name="nextlevel" type="event" x="-3.3335" y="743" width="322.667" height="22"/>
+ </objectgroup>
+</map>
