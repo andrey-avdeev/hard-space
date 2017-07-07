@@ -105,10 +105,7 @@
     <TypeScriptCompile Include="src\prefabs\enemies\medium-green-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\small-blue-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\small-green-enemy.ts" />
-    <TypeScriptCompile Include="src\prefabs\other\base-asteroid.ts" />
-    <TypeScriptCompile Include="src\prefabs\other\large-asteroid.ts" />
-    <TypeScriptCompile Include="src\prefabs\other\medium-asteroid.ts" />
-    <TypeScriptCompile Include="src\prefabs\other\small-asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\asteroid.ts" />
     <TypeScriptCompile Include="src\prefabs\player.ts" />
     <TypeScriptCompile Include="src\states\boot.ts" />
     <TypeScriptCompile Include="src\states\level.ts" />

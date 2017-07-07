@@ -1,6 +1,6 @@
 {
     "meta": {
-        "generated": "1499149542625",
+        "generated": "1499463383539",
         "version": "1.0",
         "app": "gulp-phaser-tiled-pack",
         "url": "https://github.com/englercj/gulp-phaser-tiled-pack"
@@ -12,14 +12,6 @@
             "key": "level02_tileset_background",
             "name": "background",
             "url": "images/backgrounds/background_space.png",
-            "overwrite": false
-        },
-        {
-            "type": "image",
-            "subtype": "tileset",
-            "key": "level02_tileset_player",
-            "name": "player",
-            "url": "images/player/p01.png",
             "overwrite": false
         },
         {
@@ -56,10 +48,26 @@
         },
         {
             "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_4_asteroids",
+            "name": "asteroids_image_4",
+            "url": "images/obstacles/asteroid05.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
+            "subtype": "tileset_image",
+            "key": "level02_tileset_image_5_asteroids",
+            "name": "asteroids_image_5",
+            "url": "images/obstacles/asteroid06.png",
+            "overwrite": false
+        },
+        {
+            "type": "image",
             "subtype": "tileset",
-            "key": "level02_tileset_ui",
-            "name": "ui",
-            "url": "images/other/controls.png",
+            "key": "level02_tileset_player",
+            "name": "player",
+            "url": "images/player/p01.png",
             "overwrite": false
         },
         {
