@@ -1,4 +1,5 @@
 ﻿import { BaseAmmo } from './base-ammo.js';
+import { DamageKind } from "Game";
 
 export class Discharge extends BaseAmmo {
 	constructor(
@@ -10,6 +11,6 @@ export class Discharge extends BaseAmmo {
 		vy: number,
 		power: number
 	) {
-		super(game, key, x, y, vx, vy, power);
+		super(game, key, x, y, vx, vy, power, DamageKind.Electric);
 	}
 }

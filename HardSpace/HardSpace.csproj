@@ -124,6 +124,7 @@
     <TypeScriptCompile Include="src\prefabs\ammo\bullet.ts" />
     <TypeScriptCompile Include="src\prefabs\ammo\discharge.ts" />
     <TypeScriptCompile Include="src\prefabs\ammo\plasma.ts" />
+    <TypeScriptCompile Include="src\prefabs\base-game-object.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-blue-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\base-green-enemy.ts" />
@@ -135,8 +136,13 @@
     <TypeScriptCompile Include="src\prefabs\enemies\medium-green-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\small-blue-enemy.ts" />
     <TypeScriptCompile Include="src\prefabs\enemies\small-green-enemy.ts" />
+    <TypeScriptCompile Include="src\prefabs\bomb.ts" />
+    <TypeScriptCompile Include="src\prefabs\mine.ts" />
     <TypeScriptCompile Include="src\prefabs\other\asteroid.ts" />
+    <TypeScriptCompile Include="src\prefabs\other\obstacle.ts" />
     <TypeScriptCompile Include="src\prefabs\player.ts" />
+    <TypeScriptCompile Include="src\prefabs\powerup.ts" />
+    <TypeScriptCompile Include="src\prefabs\weapon.ts" />
     <TypeScriptCompile Include="src\states\boot.ts" />
     <TypeScriptCompile Include="src\states\level.ts" />
     <TypeScriptCompile Include="src\states\menu.ts" />

@@ -1,5 +1,6 @@
 ﻿import { DamageKind } from "Game";
 import { BaseAmmo } from "src/prefabs/ammo/base-ammo.js";
+import { BaseGameObject } from './base-game-object.js';
 
 export class Player extends Phaser.Sprite {
 	public armor: number;

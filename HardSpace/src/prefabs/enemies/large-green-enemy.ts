@@ -11,6 +11,6 @@ export class LargeGreenEnemy extends BaseGreenEnemy {
 		armor: number,
 		shield: number
 	) {
-		super(game, "lg01", x, y, vx, vy, health, armor, shield);
+		super(game, "greenLargeEnemyFly", x, y, vx, vy, health, armor, shield);
 	}
 }

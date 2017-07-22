@@ -17,7 +17,5 @@ export abstract class BaseBlueEnemy extends BaseEnemy {
 
 	public getDamage(damage: number, type: DamageKind) {
 		super.getArmorDamage(damage, type);
-
-		this.play('getArmorDamage');
 	}
 }

@@ -23,16 +23,8 @@ export class BaseGreenEnemy extends BaseEnemy {
 	public getDamage(damage: number, type: DamageKind) {
 		if (this.shield > 0) {
 			this.getShieldDamage(damage, type);
-
-			this.play('getShieldDamage');
 		} else {
 			super.getArmorDamage(damage, type);
-
-			this.play('getArmorDamage');
-		}
-
-		if (this.health <= 0) {
-			//todo
 		}
 	}
 

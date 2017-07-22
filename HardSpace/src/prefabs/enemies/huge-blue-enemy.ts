@@ -10,6 +10,6 @@ export class HugeBlueEnemy extends BaseBlueEnemy {
 		health: number,
 		armor: number
 	) {
-		super(game, "hb01", x, y, vx, vy, health, armor);
+		super(game, "blueHugeEnemyFly", x, y, vx, vy, health, armor);
 	}
 }

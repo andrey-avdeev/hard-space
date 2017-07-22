@@ -1,6 +1,6 @@
 ﻿import { BaseGameObject } from '../base-game-object.js';
 
-export class Asteroid extends BaseGameObject {
+export class Obstacle extends BaseGameObject {
 	constructor(
 		game: Phaser.Game,
 		key: string,

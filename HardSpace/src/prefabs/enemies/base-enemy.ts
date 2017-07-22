@@ -1,6 +1,7 @@
 ﻿import { DamageKind } from "Game";
+import { BaseGameObject } from '../base-game-object.js';
 
-export abstract class BaseEnemy extends Phaser.Sprite {
+export abstract class BaseEnemy extends BaseGameObject {
 	public armor: number;
 
 	constructor(
@@ -13,26 +14,29 @@ export abstract class BaseEnemy extends Phaser.Sprite {
 		health: number,
 		armor: number
 	) {
-		super(game, x, y, key);
+		super(game, key, x, y, vx, vy, health, null);
 
-		this.anchor.setTo(0.5);
-
-		this.health = health
 		this.armor = armor;
 
-		this.checkWorldBounds = true;
-		this.outOfBoundsKill = true;
-
-		this.body.velocity.x = vx;
-		this.body.velocity.y = vy;
+		this.animations.add('fly');
+		this.animations.play('fly', 20, true);
 	}
 
 	public getArmorDamage(damage: number, type: DamageKind) {
 		let realDamage = damage - damage * this.armor / 100;
+
 		super.damage(realDamage);
-	}
 
-	public refresh() {
+		let shouldBeKilled = this.health <= 0;
 
+		let damageAnimation = this.animations.getAnimation('getArmorDamage');
+		if (damageAnimation) {
+			damageAnimation.play(20, false);
+			damageAnimation.onComplete.add(() => this.animations.play('fly', 20, true), this);
+		}
+
+		if (shouldBeKilled) {
+			this.kill();
+		};
 	}
 }

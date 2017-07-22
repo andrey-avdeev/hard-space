@@ -1,6 +1,7 @@
 ﻿import { DamageKind } from "Game";
+import { BaseGameObject } from '../base-game-object.js';
 
-export class BaseAmmo extends Phaser.Sprite {
+export class BaseAmmo extends BaseGameObject {
 	public power: number;
 	public damageKind: DamageKind;
 
@@ -11,19 +12,12 @@ export class BaseAmmo extends Phaser.Sprite {
 		y: number,
 		vx: number,
 		vy: number,
-		power: number
+		power: number,
+		damageKind: DamageKind
 	) {
-		super(game, x, y, key);
+		super(game, key, x, y, vx, vy, null, null);
 
-		this.anchor.setTo(0.5);
-		this.checkWorldBounds = true;
-		this.outOfBoundsKill = true;
-
-		this.body.velocity.x = vx;
-		this.body.velocity.y = vy;
-	}
-
-	public refresh() {
-
+		this.power = power;
+		this.damageKind = damageKind;
 	}
 }

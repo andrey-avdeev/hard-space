@@ -1,6 +1,6 @@
-﻿import { BaseGameObject } from '../base-game-object.js';
+﻿import { BaseGameObject } from './base-game-object.js';
 
-export class Asteroid extends BaseGameObject {
+export class Bomb extends BaseGameObject {
 	constructor(
 		game: Phaser.Game,
 		key: string,
@@ -12,5 +12,8 @@ export class Asteroid extends BaseGameObject {
 		rotation: number
 	) {
 		super(game, key, x, y, vx, vy, health, rotation);
+
+		this.animations.add('twinkle');
+		this.animations.play('twinkle', 20, true);
 	}
 }
