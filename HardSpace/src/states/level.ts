@@ -1,5 +1,5 @@
 ﻿import * as TileMap from "TileMap";
-import { EnemyFactory } from "src/utils/enemy-factory.js";
+import { GameObjectFactory } from "src/utils/game-object-factory.js";
 import { EventFactory } from "src/utils/event-factory.js";
 import { LevelProvider } from "src/utils/level-provider.js";
 import { MessageFactory } from "src/utils/message-factory.js";
@@ -9,7 +9,7 @@ export class LevelState extends Phaser.State {
 	private levelId: number;
 	private backgroundKey: string;
 
-	private enemyFactory: EnemyFactory;
+	private gameObjectFactory: GameObjectFactory;
 	private eventFactory: EventFactory;
 	private levelProvider: LevelProvider;
 	private messageFactory: MessageFactory;
@@ -23,7 +23,7 @@ export class LevelState extends Phaser.State {
 	init(levelId: number) {
 		this.levelId = levelId;
 
-		this.enemyFactory = new EnemyFactory(this.game);
+		this.gameObjectFactory = new GameObjectFactory(this.game);
 		this.eventFactory = new EventFactory(this.game);
 		this.levelProvider = new LevelProvider(this.game);
 		this.messageFactory = new MessageFactory(this.game);

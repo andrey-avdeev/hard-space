@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="5" height="40" tilewidth="64" tileheight="64" nextobjectid="107">
+ <tileset firstgid="1" name="background" tilewidth="40" tileheight="40" tilecount="1" columns="1">
+  <image source="../images/backgrounds/background_space.png" width="40" height="40"/>
+  <terraintypes>
+   <terrain name="New Terrain" tile="0"/>
+  </terraintypes>
+ </tileset>
+ <tileset firstgid="2" name="asteroids" tilewidth="79" tileheight="71" tilecount="6" columns="0">
+  <tile id="0">
+   <properties>
+    <property name="hp" type="int" value="10"/>
+   </properties>
+   <image width="32" height="26" source="../images/obstacles/asteroid01.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+   </properties>
+   <image width="33" height="33" source="../images/obstacles/asteroid02.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="hp" type="int" value="40"/>
+   </properties>
+   <image width="79" height="71" source="../images/obstacles/asteroid03.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="hp" type="int" value="35"/>
+   </properties>
+   <image width="36" height="36" source="../images/obstacles/asteroid04.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="hp" type="int" value="30"/>
+   </properties>
+   <image width="41" height="43" source="../images/obstacles/asteroid05.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="hp" type="int" value="25"/>
+   </properties>
+   <image width="24" height="26" source="../images/obstacles/asteroid06.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" name="player" tilewidth="42" tileheight="30" tilecount="6" columns="3">
+  <properties>
+   <property name="hp" type="int" value="100"/>
+  </properties>
+  <image source="../images/player/p01.png" width="126" height="60"/>
+ </tileset>
+ <objectgroup name="GameObjects" offsetx="0" offsety="3.0303">
+  <object id="46" name="Good morning, major. Continue patrol asteroids belt." type="message" x="1.33333" y="2426.3" width="318" height="22"/>
+  <object id="49" name="There is strange signal inside those asteroids. Check it out." type="message" x="0.6665" y="2136.33" width="319.334" height="22"/>
+  <object id="50" name="Signal was lost, but the same strange signature was detected in next sector." type="message" x="3.99983" y="1041.67" width="322.667" height="22"/>
+  <object id="54" name="nextlevel" type="event" x="-3.3335" y="743" width="322.667" height="22"/>
+  <object id="57" type="player" gid="9" x="139.5" y="2559.72" width="42" height="30">
+   <properties>
+    <property name="hp" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="58" gid="2" x="201.001" y="2224.02" width="32" height="26" rotation="9.91352"/>
+  <object id="59" gid="3" x="68.7704" y="1982.75" width="33" height="33" rotation="31.9248"/>
+  <object id="60" gid="7" x="222.884" y="1892.69" width="24" height="26" rotation="-15.4022"/>
+  <object id="61" gid="5" x="78.0905" y="1842.91" width="36" height="36" rotation="-14.5269"/>
+  <object id="62" gid="6" x="238.868" y="1646.08" width="41" height="43" rotation="12.3788"/>
+  <object id="63" gid="2" x="40.0794" y="1506.16" width="32" height="26" rotation="15.6982"/>
+  <object id="64" gid="2" x="100.81" y="1489.81" width="32" height="26" rotation="-11.1288"/>
+  <object id="65" gid="4" x="136.806" y="1347.06" width="79" height="71" rotation="5.45239"/>
+  <object id="67" gid="3" x="57.5189" y="2209.86" width="33" height="33" rotation="-11.1993"/>
+  <object id="68" gid="3" x="35.1234" y="2295.35" width="33" height="33" rotation="6.95532"/>
+  <object id="69" gid="3" x="150.389" y="2216.3" width="33" height="33" rotation="14.5278"/>
+  <object id="70" gid="7" x="86.5001" y="2236.89" width="24" height="26" rotation="-10.2321"/>
+  <object id="71" gid="6" x="278.59" y="1859.16" width="41" height="43" rotation="-13.511"/>
+  <object id="72" gid="5" x="257.862" y="1531.54" width="36" height="36" rotation="15.4172"/>
+  <object id="73" gid="7" x="109.088" y="1338.49" width="24" height="26" rotation="14.7331"/>
+  <object id="74" gid="7" x="134.534" y="1294.23" width="24" height="26" rotation="-6.43921"/>
+  <object id="75" gid="7" x="228.436" y="1284.38" width="24" height="26" rotation="18.9014"/>
+  <object id="76" gid="7" x="220.261" y="1379.35" width="24" height="26" rotation="-13.1075"/>
+  <object id="77" gid="2" x="170.714" y="1247.83" width="32" height="26" rotation="-7.04051"/>
+  <object id="78" gid="2" x="137" y="1202.97" width="32" height="26"/>
+  <object id="79" gid="4" x="32.7311" y="1266.79" width="79" height="71" rotation="-4.23747"/>
+  <object id="80" gid="4" x="208.165" y="1132.08" width="79" height="71" rotation="27.1003"/>
+  <object id="81" gid="4" x="38.9302" y="1124.35" width="79" height="71" rotation="9.00524"/>
+  <object id="82" gid="3" x="196.77" y="1111.34" width="33" height="33" rotation="-8.95664"/>
+  <object id="83" gid="7" x="285" y="1190.97" width="24" height="26"/>
+  <object id="84" gid="7" x="280.248" y="1013.74" width="24" height="26" rotation="13.7833"/>
+  <object id="85" gid="7" x="223.935" y="1006.52" width="24" height="26" rotation="-8.03344"/>
+  <object id="86" gid="7" x="80.7354" y="995.435" width="24" height="26" rotation="11.0248"/>
+  <object id="87" gid="7" x="14.8617" y="1004.12" width="24" height="26" rotation="-11.6099"/>
+  <object id="88" gid="2" x="112.649" y="1020.1" width="32" height="26" rotation="6.40929"/>
+  <object id="89" gid="2" x="127" y="982.97" width="32" height="26"/>
+  <object id="90" gid="2" x="181" y="944.97" width="32" height="26"/>
+  <object id="92" gid="6" x="50.3415" y="832.586" width="41" height="43" rotation="-15.1721"/>
+  <object id="93" gid="4" x="142.711" y="831.282" width="79" height="71" rotation="35.6639"/>
+  <object id="94" gid="4" x="61.2809" y="928.322" width="79" height="71" rotation="10.3169"/>
+  <object id="95" gid="7" x="249" y="1957.97" width="24" height="26"/>
+  <object id="96" gid="7" x="110.22" y="1896.97" width="24" height="26" rotation="20.4071"/>
+  <object id="97" gid="2" x="197.584" y="1939.31" width="32" height="26" rotation="-23.7304"/>
+  <object id="98" gid="2" x="154.53" y="1875.58" width="32" height="26" rotation="-10.1097"/>
+  <object id="99" gid="2" x="56.4585" y="1876.8" width="32" height="26" rotation="7.40197"/>
+  <object id="100" gid="2" x="148.667" y="1808.4" width="32" height="26" rotation="11.8741"/>
+  <object id="102" gid="2" x="4.58087" y="2295.62" width="32" height="26" rotation="-10.2949"/>
+  <object id="103" gid="2" x="64.5913" y="2261.25" width="32" height="26" rotation="12.3405"/>
+  <object id="104" gid="2" x="119.084" y="2217.2" width="32" height="26" rotation="-4.56095"/>
+  <object id="105" gid="5" x="266.186" y="1889.96" width="36" height="36" rotation="24.308"/>
+ </objectgroup>
+</map>
